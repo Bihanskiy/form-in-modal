@@ -1,0 +1,69 @@
+@use "sass:math";
+
+@import "base/mixins";
+
+$fontFamily: "sans-serif";
+$fontSize: rem(18);
+
+$mainColor: #2d2a26;
+$backgroundColor: #acddff;
+$yellowBackgroundColor: #ffce00;
+$white: #ffffff;
+
+$minWidth: 375;
+$maxWidth: 1920;
+$maxWidthContainer: 1440;
+
+$containerPadding: 30;
+
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// break points
+$pc: em($containerWidth);
+$tablet: em(991.98);
+$mobile: em(767.98);
+$mobileSmall: em(479.98);
+
+@import "base/null";
+
+body {
+	overflow: hidden;
+	background-color: $backgroundColor;
+	color: $mainColor;
+	height: 2000px;
+	.lock & {
+		overflow: hidden;
+		touch-action: none;
+	}
+	.loaded & {
+	}
+}
+
+body.body__visible {
+	overflow: visible;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: visible;
+	> main {
+		flex: 1 1 auto;
+	}
+	> * {
+		min-width: 0;
+	}
+}
+
+.container {
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+@import "base";
+
+@import "common";
+
+@import "index";

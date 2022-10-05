@@ -1,0 +1,15 @@
+.page-form {
+    &__wrapper {
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__to-open {
+        transition: all 0.3s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

@@ -1,0 +1,45 @@
+//<FORM>
+.form {
+	align-items: flex-start;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	gap: 10px;
+
+	&__wrapper {
+		width: 100%;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 10px;
+		font-weight: 600;
+	}
+
+	&__success {
+		color: green;
+		margin-bottom: 10px;
+	}
+
+	&__error {
+		color: red;
+		margin-top: 10px;
+	}
+
+	&__submit {
+		padding: 15px 25px;
+		color: #ffffff;
+		background-color: #7cb8e2;
+		transition: all 0.3s ease;
+		&:hover {
+			background-color: #5b9fcf;
+		}
+	}
+}
+//</FORM>
+
+// <BUTTONS>
+@import "button";
+
+// <INPUTS>
+@import "input";

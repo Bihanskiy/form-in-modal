@@ -1,0 +1,10 @@
+input {
+	width: 90%;
+	height: 40px;
+	border-radius: 11px;
+	padding: 0 15px;
+	background-color: rgba(218, 216, 216, 0.315);
+	@media (max-width: $mobileSmall) {
+		width: 100%;
+	}
+}

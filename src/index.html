@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"modal"
+})
+
+<body>
+	<div class="preloader" id="preloader">
+		<img src="@img/spinner.gif" alt="spinner GIF">
+	</div>
+	<div class="wrapper">
+		<main class="page">
+			<section class="page-form">
+				<div class="container">
+					<div class="page-form__wrapper">
+						<button id="openForm" class="page-form__to-open">
+							Open Form
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<div class="content-for-modal form-content">
+				<form id="form" class="form">
+					<div class="form__wrapper">
+						<label for="username">User Name</label>
+						<input type="text" name="username" class="form__username" id="username" placeholder="Name" />
+						<div class="form__error"></div>
+					</div>
+
+					<div class="form__wrapper">
+						<label for="email">Email</label>
+						<input type="email" name="email" class="form__email" id="email" placeholder="email@gmail.com" />
+						<div class="form__error"></div>
+					</div>
+
+					<div class="form__wrapper">
+						<label for="phone">Phone</label>
+						<input type="number" name="phone" class="form__phone" id="phone" placeholder="Phone number" />
+						<div class="form__error"></div>
+					</div>
+					<div class="form__success"></div>
+					<button type="submit" class="form__submit">Submit</button>
+				</form>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+
+</body>
+
+</html>
