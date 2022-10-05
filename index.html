@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>modal</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221005230128">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="preloader" id="preloader">
+		<img src="img/spinner.gif" alt="spinner GIF">
+	</div>
+	<div class="wrapper">
+		<main class="page">
+			<section class="page-form">
+				<div class="container">
+					<div class="page-form__wrapper">
+						<button id="openForm" class="page-form__to-open">
+							Open Form
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<div class="content-for-modal form-content">
+				<form id="form" class="form">
+					<div class="form__wrapper">
+						<label for="username">User Name</label>
+						<input type="text" name="username" class="form__username" id="username" placeholder="Name" />
+						<div class="form__error"></div>
+					</div>
+
+					<div class="form__wrapper">
+						<label for="email">Email</label>
+						<input type="email" name="email" class="form__email" id="email" placeholder="email@gmail.com" />
+						<div class="form__error"></div>
+					</div>
+
+					<div class="form__wrapper">
+						<label for="phone">Phone</label>
+						<input type="number" name="phone" class="form__phone" id="phone" placeholder="Phone number" />
+						<div class="form__error"></div>
+					</div>
+					<div class="form__success"></div>
+					<button type="submit" class="form__submit">Submit</button>
+				</form>
+			</div>
+		</main>
+		<footer class="footer">
+
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20221005230128"></script>
+
+</body>
+
+</html>
